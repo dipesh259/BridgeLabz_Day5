@@ -1,17 +1,22 @@
-				//Find Quotient and Remainder
+				//Find Odd or Even
 
 package learned;
 
-public class Division {
+import java.util.Scanner;
+
+public class OddorEven {
     public static void main(String[] args) {
-        int dividend = 25;
-        int divisor = 4;
+        Scanner sc = new Scanner(System.in);
 
-        double quotient = dividend/divisor;
-        int remainder = dividend%divisor;
+        System.out.println("Enter a value: ");
+        int num = sc.nextInt();
 
-        System.out.println("Quotient is: "+quotient);
-        System.out.println("Quotient is: "+remainder);
+        if (num%2==0)
+            System.out.println("It is even");
+        else
+            System.out.println("It is odd");
+
+
 
     }
 }
