@@ -1,19 +1,25 @@
-				//Check for Vowel or Consonant
+				//Find Largest Number
 
 package learned;
 
 import java.util.Scanner;
-
-public class VowelsConsonent {
+public class LargestNumber {
     public static void main(String[] args) {
+        int a, b, c, largest, temp;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter an alphabet");
-        char alpha = sc.next().charAt(0);
+        System.out.println("Enter the first number:");
+        a = sc.nextInt();
 
-        if ( alpha == 'a' || alpha == 'e' || alpha == 'i' || alpha == 'u')
-            System.out.println("It is vowel");
-        else
-            System.out.println("It is a consonant");
+        System.out.println("Enter the second number:");
+        b = sc.nextInt();
+
+        System.out.println("Enter the third number:");
+        c = sc.nextInt();
+
+        temp=a>b?a:b;
+        largest=c>temp?c:temp;
+
+        System.out.println("The largest number is: "+largest);
     }
 }
