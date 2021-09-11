@@ -1,19 +1,15 @@
-				//Power of 2
+				//Harmonic Number
 
 package learned;
-import java.util.Scanner;
 
-public class power {
+public class harnomic {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter N Value: ");
-         double N = sc.nextDouble();
-
-        System.out.println("Enter Number: ");
-        double num = sc.nextDouble();
-
-        System.out.println(Math.pow(num, N));
+        double n=10,i;
+        double sum=0;
+        for(i=1;i<=n;i++)
+        {
+            sum=sum+(1/i);
+        }
+        System.out.println("Harmonic value = "+sum);
     }
 }
-
