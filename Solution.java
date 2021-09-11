@@ -1,25 +1,26 @@
-				//Find Largest Number
+				//Swap two number value
 
 package learned;
-
 import java.util.Scanner;
-public class LargestNumber {
+
+public class Swap {
     public static void main(String[] args) {
-        int a, b, c, largest, temp;
         Scanner sc = new Scanner(System.in);
+        int temp = 0;
 
-        System.out.println("Enter the first number:");
-        a = sc.nextInt();
+        System.out.println("Enter a value: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b value: ");
+        int b = sc.nextInt();
 
-        System.out.println("Enter the second number:");
-        b = sc.nextInt();
 
-        System.out.println("Enter the third number:");
-        c = sc.nextInt();
+        temp = a;
+        a = b;
+        b = temp;
 
-        temp=a>b?a:b;
-        largest=c>temp?c:temp;
+        System.out.println("a = "+a);
+        System.out.println("b = "+b);
 
-        System.out.println("The largest number is: "+largest);
     }
 }
+
