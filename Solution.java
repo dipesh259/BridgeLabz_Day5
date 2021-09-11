@@ -1,24 +1,17 @@
-				//Factor
+				//Find Quotient and Remainder
 
 package learned;
 
-import java.util.Scanner;
-
-public class factor {
+public class Division {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int dividend = 25;
+        int divisor = 4;
 
-        System.out.println("Enter a Number: ");
-        int num = sc.nextInt();
+        double quotient = dividend/divisor;
+        int remainder = dividend%divisor;
 
-        for(int i =2; i < num; i++){
-            while (num%i ==0){
-                System.out.println(i+" ");
-                num = num/i;
-            }
-        }
-            if (num > 2){
-                System.out.println(num);
-            }
+        System.out.println("Quotient is: "+quotient);
+        System.out.println("Quotient is: "+remainder);
+
     }
 }
