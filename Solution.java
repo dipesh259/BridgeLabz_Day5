@@ -1,17 +1,19 @@
-package learned;
+				//Power of 2
 
+package learned;
 import java.util.Scanner;
 
-public class LeapYear {
-    public static void main(String[] args){
-        int year;
-        System.out.println("Enter an Year: ");
+public class power {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        year = sc.nextInt();
 
-        if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
-            System.out.println("It is a leap year");
-        else
-            System.out.println("It is not a leap year");
+        System.out.println("Enter N Value: ");
+         double N = sc.nextDouble();
+
+        System.out.println("Enter Number: ");
+        double num = sc.nextDouble();
+
+        System.out.println(Math.pow(num, N));
     }
 }
+
