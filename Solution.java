@@ -1,15 +1,24 @@
-				//Harmonic Number
+				//Factor
 
 package learned;
 
-public class harnomic {
+import java.util.Scanner;
+
+public class factor {
     public static void main(String[] args) {
-        double n=10,i;
-        double sum=0;
-        for(i=1;i<=n;i++)
-        {
-            sum=sum+(1/i);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a Number: ");
+        int num = sc.nextInt();
+
+        for(int i =2; i < num; i++){
+            while (num%i ==0){
+                System.out.println(i+" ");
+                num = num/i;
+            }
         }
-        System.out.println("Harmonic value = "+sum);
+            if (num > 2){
+                System.out.println(num);
+            }
     }
 }
